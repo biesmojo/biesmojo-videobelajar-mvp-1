@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VideoBelajar — Beranda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Logo VideoBelajar" style="width:135px; height:32px;">
+      </div>
+      <nav class="site-nav">
+        <a href="Beranda.html">Beranda</a>
+        <a href="#">Kursus</a>
+        <a href="#">Tentang</a>
+      </nav>
+      <div class="profile">
+        <img src="assets/images/avatar.png" alt="Profil">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Kumpulan Video Course on Demand</h1>
+          <p>Belajar mandiri dengan materi terkurasi, dari mentor berpengalaman.</p>
+          <div class="actions">
+            <a class="btn primary" href="#courses">Mulai Belajar</a>
+            <a class="btn ghost" href="#newsletter">Lihat Cara Kerja</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/images/hero.jpg" alt="Belajar online">
+        </div>
+      </div>
+    </section>
+
+    <!-- Koleksi unggulan -->
+    <section class="section course-grid" id="courses">
+      <div class="container">
+        <h2>Koleksi Unggulan</h2>
+
+        <!-- Kategori -->
+        <div class="categories" style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <button class="btn ghost" data-cat="all">Semua Kelas</button>
+          <button class="btn ghost" data-cat="pemasaran">Pemasaran</button>
+          <button class="btn ghost" data-cat="desain">Desain</button>
+          <button class="btn ghost" data-cat="pengembangan-diri">Pengembangan Diri</button>
+          <button class="btn ghost" data-cat="bisnis">Bisnis</button>
+        </div>
+
+        <!-- Grid card -->
+        <div class="grid" style="margin-top:24px;">
+          <article class="card course" data-cat="desain">
+            <img src="assets/images/course-1.jpg" alt="Desain UI">
+            <div class="card-body">
+              <h3>Desain UI Dasar</h3>
+              <p class="meta">Kategori: Desain</p>
+              <p>Pelajari prinsip UI dan praktik membuat mockup.</p>
+              <a class="btn link" href="#">Lihat detail</a>
+            </div>
+          </article>
+          <article class="card course" data-cat="desain">
+            <img src="assets/images/course-2.jpg" alt="Financial Analysis">
+            <div class="card-body">
+              <h3>Big 4 Auditor Financial Analyst</h3>
+              <p class="meta">Kategori: Bisnis</p>
+              <p>Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+              <a class="btn link" href="#">Lihat detail</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Newsletter -->
+    <section class="section" id="newsletter">
+      <div class="container">
+        <h2>Dapatkan Newsletter</h2>
+        <p class="meta">Masukkan email untuk update kursus terbaru.</p>
+        <form id="newsletterForm" style="max-width:560px; margin-top:16px;">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="nama@domain.com" required>
+          </div>
+          <button class="btn primary" type="submit">Submit</button>
+          <p id="newsletterMsg" class="meta" style="margin-top:12px; display:none;"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="display:grid; grid-template-columns: 1.2fr 1fr 1fr; gap:24px;">
+      <div>
+        <strong>VideoBelajar</strong>
+        <p class="meta">Platform belajar mandiri dengan video course on demand.</p>
+      </div>
+      <div>
+        <strong>Kategori</strong>
+        <ul style="list-style:none; padding:0; margin-top:8px;">
+          <li><a href="#">Pemasaran</a></li>
+          <li><a href="#">Desain</a></li>
+          <li><a href="#">Pengembangan Diri</a></li>
+          <li><a href="#">Bisnis</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Sosial</strong>
+        <ul style="list-style:none; padding:0; margin-top:8px;">
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="padding:16px 24px; border-top:1px solid #e5e7eb; margin-top:24px;">
+      <p class="meta">© 2025 Biesmojo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

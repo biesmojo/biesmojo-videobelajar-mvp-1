@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VideoBelajar — Daftar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="section" style="min-height:100vh; display:grid; place-items:center;">
+    <div class="card" style="width:100%; max-width:560px;">
+      <div class="card-body">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+          <img src="assets/images/logo.png" alt="Logo VideoBelajar" style="width:135px; height:32px;">
+        </div>
+        <h2>Daftar</h2>
+
+        <form id="registerForm" style="margin-top:12px;">
+          <div class="form-group">
+            <label for="regName">Nama</label>
+            <input id="regName" name="name" type="text" placeholder="Nama lengkap" required>
+          </div>
+          <div class="form-group">
+            <label for="regEmail">E-mail</label>
+            <input id="regEmail" name="email" type="email" placeholder="nama@domain.com" required>
+          </div>
+          <div class="form-group">
+            <label for="regPhone">Nomor HP</label>
+            <input id="regPhone" name="phone" type="tel" placeholder="08xxxxxxxxxx" required>
+          </div>
+          <div class="form-group">
+            <label for="regPassword">Kata sandi</label>
+            <input id="regPassword" name="password" type="password" placeholder="••••••••" required>
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Konfirmasi kata sandi</label>
+            <input id="regConfirm" name="confirm" type="password" placeholder="••••••••" required>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin:12px 0;">
+            <a class="btn-link" style="color: blue" href="#">Lupa password?</a>
+            <div style="display:flex; gap:12px;">
+              <button class="btn ghost" type="button" onclick="window.location.href='login.html'">Masuk</button>
+              <button class="btn primary" type="submit">Daftar</button>
+            </div>
+          </div>
+
+          <hr style="border:none; border-top:1px solid #e5e7eb; margin:16px 0;">
+          <button class="btn secondary" type="button">Single Sign-On dengan Google</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
